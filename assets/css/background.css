@@ -1,0 +1,7 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{position: absolute;width: 100vw;height: 100vh;background-color: black;display: flex;flex-wrap: wrap;overflow: hidden;animation:  changerColor 5s linear infinite;}
+i{position: relative;width: 30px;height: 30px;}
+i::before{content: '';position: absolute;top: 0;left: 0;width: 30%;height: 30%;background-color: #00ff0a;transform: scale(0.1); box-shadow: 0 0 10px #00ff0a,0 0 20px #00ff0a,0 0 40px #00ff0a,0 0 60px #00ff0a, 0 0 80px #00ff0a,0 0 100px #00ff0a;   pointer-events: none;transition: 0.5s;}
+i:hover::before{transform: scale(1);transition: 0s;}
+@keyframes changerColor{0% {filter: hue-rotate(0deg);}100%{filter: hue-rotate(360deg);}
+}
